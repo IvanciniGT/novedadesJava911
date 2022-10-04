@@ -290,7 +290,7 @@ Cada módulo incluye (define):
                         por defecto: NADA ES VISIBLE PARA OTROS !
 - Permisos de Reflection: por defecto TODO ESTA CAPADO !!!!
 ---
-- Servicios: - Aprender que es un servicio (API nuevo en JAVA)
+- Servicios: - Aprender que es un servicio (API nuevo en JAVA)      Singleton
     - Servicios consume este modulo
     - Servicios provee este modulo
 ---
