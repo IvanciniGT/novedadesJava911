@@ -5,11 +5,9 @@ public abstract class AbstractDiccionario implements Diccionario {
     
     private String idioma;
     private Map<String, String> terminos;
-    private boolean diccionarioPorDefecto
-    
-    protected AbstractDiccionario(String idioma, boolean diccionarioPorDefecto) {
+
+    protected AbstractDiccionario(String idioma) {
         this.idioma=idioma;
-        this.diccionarioPorDefecto=diccionarioPorDefecto
         this.terminos=cargarTerminos(); // Esta clase la extenderán otras... Todas leeran el ficheor igual? QUIZAS O NO
     }
     
@@ -30,11 +28,6 @@ public abstract class AbstractDiccionario implements Diccionario {
     @Override
     public String getIdioma(){
         return this.idioma;
-    }
-    
-    @Override
-    public boolean isPorDefecto(){
-        return this.diccionarioPorDefecto;
     }
     
     @Override
