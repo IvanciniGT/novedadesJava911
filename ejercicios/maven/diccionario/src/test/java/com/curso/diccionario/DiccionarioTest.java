@@ -55,7 +55,7 @@ class DiccionarioTest {
     }
 
     @ParameterizedTest
-    @ValueSource(strings = {"manana","acelgo","oya","monjo","pelita","cordenada"}) // six numbers
+    @ValueSource(strings = {"manana","acelgo","oya","monjo","pelita","cordenada"}) 
     void corregir(String termino) {
         for(int i = 0;i<1;i++) {
             var correcciones = DiccionarioTest.diccionario.corregir(termino);

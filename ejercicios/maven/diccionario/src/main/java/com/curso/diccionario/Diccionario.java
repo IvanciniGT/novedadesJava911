@@ -7,6 +7,7 @@ import java.nio.file.Path;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
+//import lombok.NonNull;
 
 public interface Diccionario {
     static String getIdiomaPorDefecto() {
@@ -29,11 +30,13 @@ public interface Diccionario {
         return getIdioma().equals(Diccionario.getIdiomaPorDefecto());
     }
 
-    Optional<String> getSignificado(String termino);
+                                    // JAVA 8. No la anotación
+                                    // Es la posibilidad de meter anotaciones en este trozo de código
+    Optional<String> getSignificado(/*@NonNull*/ String termino);
 
-    boolean existe(String termino); // Editar de correo interactivo. Pantallita.
+    boolean existe(/*@NonNull*/ String termino); // Editar de correo interactivo. Pantallita.
     // Cada palabra que se escriba, saber si existe.. Si no existe: SUBARAYADA ROJO
 
-    List<String> corregir(String termino); // Me da la lista deposibilidades 
+    List<String> corregir(/*@NonNull*/ String termino); // Me da la lista deposibilidades 
 
 }
