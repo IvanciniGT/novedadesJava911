@@ -1,0 +1,4 @@
+--patch-module
+diccionario=_
+--add-reads
+diccionario=ALL-UNNAMED
